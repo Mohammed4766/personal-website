@@ -9,7 +9,7 @@ class HeaderMobile extends StatelessWidget {
   Widget build(BuildContext context) {
     var height = MediaQuery.of(context).size.height;
     return SizedBox(
-      height: height - 100,
+      height: height - 40,
       child: Column(
         children: [
           Stack(

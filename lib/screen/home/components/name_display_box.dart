@@ -66,7 +66,7 @@ class NameDisplayBox extends StatelessWidget {
           ],
         ),
         SizedBox(
-          height: height * 0.02,
+          height: height * 0.002,
         ),
         Row(
           mainAxisSize: MainAxisSize.min,
@@ -75,7 +75,7 @@ class NameDisplayBox extends StatelessWidget {
               SocialMediaIconBtn(
                 icon: mySocialIcons[i],
                 socialLink: mySocialLinks[i],
-                height: height * 0.09,
+                height: height * 0.095,
                 horizontalPadding: width * 0.005,
               ),
           ],
