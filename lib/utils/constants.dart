@@ -3,7 +3,7 @@ import 'package:url_launcher/url_launcher.dart';
 
 class Constants {
   static String aboutMe =
-      "As a recent graduate in Software Engineering, I am a passionate and dedicated application developer with a profound enthusiasm for technology. My academic journey has provided me with a robust foundation in software development principles, various coding languages, and exceptional problem-solving skills.";
+      "Motivated Software Engineer with application development experience. Holds a Bachelor’s degree in Software Engineering. Skilled in developing user-friendly mobile applications, implementing engaging features and utilizing modern technologies. Active member of the Google Club for Student Developers and recognized for participation in the Hail Al Hackathon. Possesses technical skills in Flutter, API integration, Dart, Figma and Firebase.";
 }
 
 // Colors
@@ -12,7 +12,6 @@ const Color kPrimaryColor = Color.fromRGBO(21, 181, 114, 1);
 const Color kBackgroundColor = Color.fromRGBO(7, 17, 26, 1);
 const Color kDangerColor = Color.fromRGBO(249, 77, 30, 1);
 const Color kCaptionColor = Color.fromRGBO(166, 177, 187, 1);
-
 
 // Social Media
 const mySocialIcons = [
@@ -29,9 +28,6 @@ const mySocialLinks = [
 void launchURL(String url) async =>
     // ignore: deprecated_member_use
     await canLaunch(url) ? await launch(url) : throw 'Could not launch $url';
-
-
-
 
 final mySkill = [
   "Flutter",
@@ -56,13 +52,3 @@ final hardSkills = [
   "Communication",
   "Attention to detail"
 ];
-
-
-
-
-
-
-
-
-
-

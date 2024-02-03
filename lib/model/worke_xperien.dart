@@ -14,15 +14,15 @@ class WorkeXperien {
 
 List<WorkeXperien> myWorkeXperien = [
   WorkeXperien(
-      companyName: 'Mind Information Technology ',
+      companyName: 'Mind Information Technology(Internship)',
       jobDescription:
-          'During the training period, I contributed to two projects: the Afo fundraising platform and Berry Gyms. My primary role in both projects involved the development of mobile applications. ',
-      jobTitle: 'Application developer (intern)',
+          '- Developing a mobile application for the EAfW platform and creating a user-friendly interface. \n - Gaining practical experience in mobile application development and utilizing modern technologies. \n - Contributing to the development of a mobile application for the Berry Games platform.\n -Collaborating with the team to design interactive gameplay features and implementing engaging features.',
+      jobTitle: 'Mobile application developer',
       startAndEndDate: '06/2023 – 08/2023'),
   WorkeXperien(
-      companyName: 'Google Club for Student Developers ',
+      companyName: 'Google Club for Student Developers(Volunteer)',
       jobDescription:
-          'Delivering instructional lectures and providing guidance to students in the development of applications. ',
+          '- Presenter of Software Engineering Specialization Exploration Journey Initiative | Google Developer Student Clubs | Northern Border University | Dec 2023 \n -Presenter of Build your first Flutter App course | Google Developer Student Clubs | Aljouf University | Jan 2024.',
       jobTitle: 'Member',
       startAndEndDate: '02/2023 – 01/2024'),
 ];

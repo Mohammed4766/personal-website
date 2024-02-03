@@ -18,8 +18,9 @@ class NameDisplayBox extends StatelessWidget {
       children: [
         Text(
           "WELCOME TO MY PORTFOLIO! ",
-          style:
-              TextStyle(fontSize: width <600 ? width * 0.06 : height * 0.05, fontWeight: FontWeight.w300),
+          style: TextStyle(
+              fontSize: width < 600 ? width * 0.06 : height * 0.05,
+              fontWeight: FontWeight.w300),
         ),
         SizedBox(
           height: height * 0.04,
@@ -27,16 +28,18 @@ class NameDisplayBox extends StatelessWidget {
         Text(
           "I am,",
           textAlign: TextAlign.start,
-          style:
-              TextStyle(fontSize: width <600 ? width * 0.05 : height * 0.06, fontWeight: FontWeight.w300),
+          style: TextStyle(
+              fontSize: width < 600 ? width * 0.05 : height * 0.06,
+              fontWeight: FontWeight.w300),
         ),
         SizedBox(
           height: height * 0.02,
         ),
         Text(
           "Mohammed \nAlanzi ",
-          style:
-              TextStyle(fontSize:  width <600 ? width * 0.08 : height *0.09, fontWeight: FontWeight.w700),
+          style: TextStyle(
+              fontSize: width < 600 ? width * 0.08 : height * 0.09,
+              fontWeight: FontWeight.w700),
         ),
         Row(
           mainAxisSize: MainAxisSize.min,
@@ -48,7 +51,9 @@ class NameDisplayBox extends StatelessWidget {
             SizedBox(
               height: height * 0.05,
               child: DefaultTextStyle(
-                style: TextStyle(fontSize:   width <600 ? width * 0.04 : height * 0.04, color: Colors.white),
+                style: TextStyle(
+                    fontSize: width < 600 ? width * 0.04 : height * 0.04,
+                    color: Colors.white),
                 child: AnimatedTextKit(
                   totalRepeatCount: 100,
                   animatedTexts: [
@@ -70,7 +75,7 @@ class NameDisplayBox extends StatelessWidget {
               SocialMediaIconBtn(
                 icon: mySocialIcons[i],
                 socialLink: mySocialLinks[i],
-                height: height * 0.035,
+                height: height * 0.09,
                 horizontalPadding: width * 0.005,
               ),
           ],
