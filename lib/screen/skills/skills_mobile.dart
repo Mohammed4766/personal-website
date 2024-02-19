@@ -59,7 +59,7 @@ class SkillsMobile extends StatelessWidget {
 
   skillsBox(width) {
     List<Widget> skila = [];
-    for (int i = 1; i < mySkill.length; i++) {
+    for (int i = 0; i < mySkill.length; i++) {
       skila.add(SkillsBox(
         skill: mySkill[i],
         width: width,
@@ -70,7 +70,7 @@ class SkillsMobile extends StatelessWidget {
 
   hardskills(width) {
     List<Widget> skila = [];
-    for (int i = 1; i < hardSkills.length; i++) {
+    for (int i = 0; i < hardSkills.length; i++) {
       skila.add(SkillsBox(
         skill: hardSkills[i],
         width: width,

@@ -36,11 +36,12 @@ final mySkill = [
   "Fetch API",
   "OOP",
   "Figma",
-  "software testing",
+  "node js",
+  "express js"
+      "software testing",
   "Development Process",
   "html",
   "Css",
-  "php",
   "SQL"
 ];
 
