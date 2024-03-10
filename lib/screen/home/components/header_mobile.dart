@@ -9,14 +9,16 @@ class HeaderMobile extends StatelessWidget {
   Widget build(BuildContext context) {
     var height = MediaQuery.of(context).size.height;
     return SizedBox(
-      height: height - 40,
+      height: height - 120,
       child: Column(
         children: [
           Stack(
             children: [
-              Lottie.asset(
-                "assets/1.json",
-                width: height * 0.43,
+              Center(
+                child: Lottie.asset(
+                  "assets/1.json",
+                  width: height * 0.33,
+                ),
               ),
               Center(
                 child: Container(
@@ -24,7 +26,7 @@ class HeaderMobile extends StatelessWidget {
                   decoration: const BoxDecoration(shape: BoxShape.circle),
                   child: Image.asset(
                     "assets/10.jpg",
-                    width: height * 0.28,
+                    width: height * 0.20,
                   ),
                 ),
               ),

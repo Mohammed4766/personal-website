@@ -38,7 +38,7 @@ final mySkill = [
   "Figma",
   "node js",
   "express js"
-      "software testing",
+  "software testing",
   "Development Process",
   "html",
   "Css",

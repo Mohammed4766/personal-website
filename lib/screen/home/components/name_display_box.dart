@@ -75,7 +75,7 @@ class NameDisplayBox extends StatelessWidget {
               SocialMediaIconBtn(
                 icon: mySocialIcons[i],
                 socialLink: mySocialLinks[i],
-                height: height * 0.095,
+                height: height * 0.075,
                 horizontalPadding: width * 0.005,
               ),
           ],

@@ -8,7 +8,8 @@ class ContactDesktop extends StatelessWidget {
   Widget build(BuildContext context) {
     var width = MediaQuery.of(context).size.width;
     var height = MediaQuery.of(context).size.height;
-    return Padding(
+    return Container(
+      color: const Color.fromARGB(255, 104, 99, 99),
       padding: const EdgeInsets.all(20),
       child: Row(
         children: [
@@ -23,8 +24,8 @@ class ContactDesktop extends StatelessWidget {
                         begin: Alignment.topRight,
                         end: Alignment.bottomLeft,
                         colors: [
-                          Color.fromARGB(255, 104, 99, 99),
-                          Color.fromARGB(255, 72, 68, 68)
+                          Color.fromARGB(255, 28, 26, 26),
+                          Color.fromARGB(255, 45, 42, 42)
                         ]),
                     borderRadius: BorderRadius.all(Radius.circular(8))),
                 child: Row(
@@ -51,8 +52,8 @@ class ContactDesktop extends StatelessWidget {
                         begin: Alignment.topRight,
                         end: Alignment.bottomLeft,
                         colors: [
-                          Color.fromARGB(255, 104, 99, 99),
-                          Color.fromARGB(255, 72, 68, 68)
+                          Color.fromARGB(255, 28, 26, 26),
+                          Color.fromARGB(255, 45, 42, 42)
                         ]),
                     borderRadius: BorderRadius.all(Radius.circular(8))),
                 child: Row(

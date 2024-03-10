@@ -3,8 +3,15 @@ import 'package:flutter_swiper_view/flutter_swiper_view.dart';
 
 import '../../model/project_model.dart';
 
-class ProjectsDsektop extends StatelessWidget {
+class ProjectsDsektop extends StatefulWidget {
   const ProjectsDsektop({super.key});
+
+  @override
+  State<ProjectsDsektop> createState() => _ProjectsDsektopState();
+}
+
+class _ProjectsDsektopState extends State<ProjectsDsektop> {
+  String image = projects[0].projectImg;
 
   @override
   Widget build(BuildContext context) {
@@ -12,9 +19,9 @@ class ProjectsDsektop extends StatelessWidget {
     var height = MediaQuery.of(context).size.height;
     return Container(
       padding: const EdgeInsets.symmetric(vertical: 20),
-      color: const Color.fromARGB(255, 104, 99, 99),
       child: Column(children: [
-        Text("Projects".toUpperCase(), style: TextStyle(fontSize: width * 0.05)),
+        Text("Projects".toUpperCase(),
+            style: TextStyle(fontSize: width * 0.05)),
         projectCard(height, width),
       ]),
     );
@@ -28,6 +35,11 @@ class ProjectsDsektop extends StatelessWidget {
         itemCount: projects.length,
         layout: SwiperLayout.STACK,
         itemWidth: width * 0.5,
+        onIndexChanged: (value) {
+          setState(() {
+            image = projects[value].projectImg;
+          });
+        },
         itemBuilder: (context, index) {
           return Container(
             padding: const EdgeInsets.all(15),

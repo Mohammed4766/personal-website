@@ -14,7 +14,6 @@ class WorkeXperienDesktop extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.all(20),
       width: width,
-      color: const Color.fromARGB(255, 104, 99, 99),
       child: Column(
         children: [
           Text("Work Experience".toUpperCase(),

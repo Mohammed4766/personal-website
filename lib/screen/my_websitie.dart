@@ -14,8 +14,8 @@ class MyWebSitie extends StatefulWidget {
 class _MyWebSitieState extends State<MyWebSitie> {
   @override
   Widget build(BuildContext context) {
-    return  Scaffold(
-      body: ResponsiveLayout(mobile: const HomeMobile(), desktop: HomeDesktop()),
+    return const Scaffold(
+      body: ResponsiveLayout(mobile: HomeMobile(), desktop: HomeDesktop()),
     );
   }
 }

@@ -15,7 +15,8 @@ class ProjectsMobile extends StatelessWidget {
       color: const Color.fromARGB(255, 104, 99, 99),
       child: Column(children: [
         Text("Projects".toUpperCase(),
-            style: TextStyle(fontSize: width * 0.06 ,fontWeight: FontWeight.bold)),
+            style:
+                TextStyle(fontSize: width * 0.06, fontWeight: FontWeight.bold)),
         prjectCard(height, width),
       ]),
     );
