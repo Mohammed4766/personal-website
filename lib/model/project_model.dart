@@ -41,6 +41,11 @@ List<Project> projects = [
           "A personal website showcasing my projects, experiences, skills, and contact information.",
       projectImg: "assets/project/Personal website.png"),
   Project(
+      projectName: "Exchange shelves",
+      projectDescription:
+          "With effortless book discovery organized by city or book name, users can seamlessly explore a curated selection of used books available for sale or as gifts. .",
+      projectImg: "assets/project/Exchange shelves.png"),
+  Project(
       projectName: "Berry Gyms",
       projectDescription:
           "This application was crafted during a cooperative internship. It enables users to subscribe to sports clubs, efficiently manage their subscriptions, and easily book lessons.",
