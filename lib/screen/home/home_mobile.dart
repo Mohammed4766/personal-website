@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_conditional_assignment
+
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import '../Project/projects_mobile.dart';
@@ -27,15 +29,22 @@ class _HomeMobileState extends State<HomeMobile> {
   }
 
   getdadat() async {
+    String? source = Uri.base.queryParameters['Source'];
+    if (source == null) {
+      source = "null";
+    }
     DateTime now = DateTime.now();
 
     firebaseFirestore = FirebaseFirestore.instance;
     QuerySnapshot<Map<String, dynamic>> mm =
         await firebaseFirestore.collection("user").get();
 
-    firebaseFirestore
-        .collection("user")
-        .add({"Platform": "phone", "Date": now, "number": mm.size});
+    firebaseFirestore.collection("user").add({
+      "Platform": "phone",
+      "Date": now,
+      "number": mm.size,
+      "source": source
+    });
   }
 
   @override
